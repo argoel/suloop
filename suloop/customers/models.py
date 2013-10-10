@@ -13,7 +13,7 @@ class Customer(Document):
 		return self.first_name + " " + self.last_name
 
 	email = EmailField(required=True)
-	first_name = StringField(required=True, max_length=50)
-	last_name = StringField(required=True, max_length=50)
+	firstname = StringField(required=True, max_length=50)
+	lastname = StringField(required=True, max_length=50)
 	time_created = DateTimeField(default=datetime.datetime.now)
 	time_updated = DateTimeField(default=datetime.datetime.now)
