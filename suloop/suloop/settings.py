@@ -127,7 +127,7 @@ INSTALLED_APPS = (
     'tastypie_mongoengine',
     'customers',
     'stores',
-    'card',
+    'points',
     'corsheaders',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',

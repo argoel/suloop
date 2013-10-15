@@ -10,10 +10,10 @@ class Customer(Document):
 	reference
 	'''
 	def __unicode__(self):
-		return self.first_name + " " + self.last_name
+		return self.firstname + " " + self.lastname
 
 	email = EmailField(required=True)
-	firstname = StringField(required=True, max_length=50)
-	lastname = StringField(required=True, max_length=50)
+	firstname = StringField(max_length=50)
+	lastname = StringField(max_length=50)
 	time_created = DateTimeField(default=datetime.datetime.now)
 	time_updated = DateTimeField(default=datetime.datetime.now)

@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 from tastypie.api import Api
 from customers.api import *
 from stores.api import *
-from card.api import *
+from points.api import *
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -11,7 +11,7 @@ from card.api import *
 v1_api = Api(api_name='v1')
 v1_api.register(CustomerResource())
 v1_api.register(StoreResource())
-v1_api.register(CardResource())
+v1_api.register(PointResource())
 
 urlpatterns = patterns('',
     # Examples:
